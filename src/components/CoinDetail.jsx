@@ -42,7 +42,7 @@ const CoinDetail = () => {
 		<Container className="py-2 my-4">
 			<Card className="mb-2" style={{ border: 'none' }}>
 				<Card.Body className="d-flex justify-content-center align-items-center">
-					<img src={data.iconUrl} alt={data.id} width={40} />
+					<img src={data.iconUrl} alt={data.uuid} width={40} />
 					<h3 className="px-2 ">
 						{data.name}({data.symbol})
 					</h3>

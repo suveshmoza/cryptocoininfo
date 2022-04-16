@@ -1,47 +1,45 @@
 import axios from 'axios';
 
 const headers = {
-	'x-rapidapi-host': process.env.REACT_APP_CRYPTO_API_HOST,
-	'x-rapidapi-key': process.env.REACT_APP_CRYPTO_API_KEY,
+	'X-RapidAPI-Host': process.env.REACT_APP_CRYPTO_API_HOST,
+	'X-RapidAPI-Key': process.env.REACT_APP_CRYPTO_API_KEY,
 };
 
+const baseURL = 'https://coinranking1.p.rapidapi.com';
+
 const getGlobalStats = async () => {
-	const response = await axios.get(
-		'https://coinranking1.p.rapidapi.com/stats',
-		{
-			headers,
-		}
-	);
+	const response = await axios.get(baseURL + '/stats', { headers });
 	return response.data;
 };
 
-const getCoins = async (count, coinName) => {
-	const response = await axios.get(
-		'https://coinranking1.p.rapidapi.com/coins',
-		{
-			headers,
-			params: {
-				limit: count,
-				search: coinName,
-			},
-		}
-	);
+const getCoins = async (count) => {
+	const response = await axios.get(baseURL + '/coins', {
+		headers,
+		params: { limit: count },
+	});
 	return response.data;
 };
 
 const getCoinDetail = async (coinId) => {
-	const response = await axios.get(
-		`https://coinranking1.p.rapidapi.com/coin/${coinId}`,
-		{ headers }
-	);
+	const response = await axios.get(baseURL + `/coin/${coinId}`, {
+		headers,
+		params: {
+			referenceCurrencyUuid: 'yhjMzLPhuIDl',
+			timePeriod: '24h',
+		},
+	});
+	console.log(response.data);
 	return response.data;
 };
 
 const getCoinHistory = async (coinId, timeStamp) => {
-	const response = await axios.get(
-		`https://coinranking1.p.rapidapi.com/coin/${coinId}/history/${timeStamp}`,
-		{ headers }
-	);
+	const response = await axios.get(baseURL + `/coin/${coinId}/history`, {
+		headers,
+		params: {
+			referenceCurrencyUuid: 'yhjMzLPhuIDl',
+			timePeriod: '24h',
+		},
+	});
 	return response.data;
 };
 

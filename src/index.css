@@ -1,0 +1,8 @@
+body,
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.table {
+	border-color: rgba(black, 0.5);
+}

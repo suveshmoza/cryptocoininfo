@@ -1,12 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import {
-	Header,
-	Homepage,
-	CryptoCurrencies,
-	News,
-	CoinDetail,
-} from './components';
+import { Header, Homepage, CryptoCurrencies, CoinDetail } from './components';
 
 const App = () => {
 	return (
@@ -18,7 +12,6 @@ const App = () => {
 					path="/cryptocurrency"
 					element={<CryptoCurrencies simplified={false} />}
 				/>
-				<Route path="/news" element={<News />} />
 				<Route path="/coin/:coinId" element={<CoinDetail />} />
 			</Routes>
 		</div>

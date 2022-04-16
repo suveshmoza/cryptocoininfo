@@ -27,7 +27,11 @@ const CryptoCurrencies = ({ simplified }) => {
 	return (
 		<>
 			<Container className="my-2">
-				{simplified && <h3>Top Cryptocurrencies</h3>}
+				{simplified && (
+					<h3>
+						<strong>Top Cryptocurrencies</strong>
+					</h3>
+				)}
 				{!simplified && (
 					<Form>
 						<Form.Control

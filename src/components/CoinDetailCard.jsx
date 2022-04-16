@@ -35,7 +35,7 @@ const CoinDetailCard = ({ data }) => {
 								className="bi bi-clock px-1"
 								style={{ fontSize: '1.2rem', color: '#000' }}
 							></i>
-							Volume {millify(data.volume)}
+							Rank {millify(data.rank)}
 						</Card.Body>
 					</Card>
 				</Col>

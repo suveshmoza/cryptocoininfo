@@ -17,9 +17,6 @@ const Header = () => {
 						<Nav.Link as={Link} to="/cryptocurrency">
 							Market
 						</Nav.Link>
-						<Nav.Link as={Link} to="/news">
-							News
-						</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>

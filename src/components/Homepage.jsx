@@ -1,12 +1,11 @@
 import React from 'react';
-import { News, GlobalStats, CryptoCurrencies } from '.';
+import { GlobalStats, CryptoCurrencies } from '.';
 
 const Homepage = () => {
 	return (
 		<>
 			<GlobalStats />
 			<CryptoCurrencies simplified />
-			<News />
 		</>
 	);
 };
