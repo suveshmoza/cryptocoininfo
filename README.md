@@ -1,8 +1,5 @@
 # CryptoCoinInfo
-
-- A one stop place for all the news and information on cryptocurrency.
-- Search through the history and trends of cryptocurrencies.
-- Watch the statistics of individual coin.
+CryptoCoinInfo is a cryptocurrency tracking website built using ReactJS. Our web app provides users with real-time data on current cryptocurrency prices and market trends, allowing you to stay up-to-date on the latest developments in the world of digital currency. In addition to real-time data, our app also offers detailed information about each coin, including historical pricing data, market capitalization, and more.
 
 ## Images
 
@@ -21,14 +18,25 @@
 
 ### To Run the Project :
 
-Clone the repository by doing : `git clone "https://github.com/suveshmoza/cryptocoininfo.git"`
+1. Clone the repository 
+```bash
+git clone "https://github.com/suveshmoza/cryptocoininfo.git"
+```
 
-Move into the repository by doing :`cd cryptocoininfo`
+2. Move into the repository
+```bash
+cd cryptocoininfo
+```
 
-#### To install dependencies :`npm install`
+3. Install dependencies
+```bash
+npm install
+```
 
-#### To run the application : `npm run start`
+4. Run the application 
+```bash
+npm run start
+```
 
-Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <br/>
